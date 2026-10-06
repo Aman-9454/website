@@ -1,0 +1,6 @@
+{
+  "enabledPlugins": {
+    "marketing@anthropic-plugin-directory": true,
+    "searchfit-seo@anthropic-plugin-directory": true
+  }
+}
