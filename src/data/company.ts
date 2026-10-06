@@ -11,7 +11,7 @@ const company: Company = {
   brandName: "Asauvia",
   domain: "asauvia.com",
   description:
-    "Asauvia is a software development and product engineering company based in Uttar Pradesh, India, building AI applications, workflow automation, custom software, web and mobile apps, and cloud and data systems for startups and enterprises worldwide.",
+    "Asauvia transforms operational chaos into clarity through AI-powered software solutions. We help growing companies and startups reduce complexity, accelerate digital transformation, and scale operations with custom software, AI automation, and digital products.",
   hqRegion: "Uttar Pradesh",
   hqCountry: "India",
   email: "info@asauvia.com",

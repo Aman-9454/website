@@ -33,7 +33,7 @@ export const viewport: Viewport = {
   themeColor: "#fafaf9",
 };
 
-const defaultTitle = `${company.brandName} | AI Software Development & Engineering Company`;
+const defaultTitle = `${company.brandName} | From Chaos to Clarity | AI Software & Automation for Growing Companies`;
 
 const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
 const bingVerification = process.env.BING_SITE_VERIFICATION;

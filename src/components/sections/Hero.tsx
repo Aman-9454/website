@@ -5,7 +5,7 @@ import { GlyphSphere } from "@/components/canvas/GlyphSphere";
 import { RotatingWords } from "@/components/hero/RotatingWords";
 
 // What we ship, from the services list. The first is the server-rendered default.
-const shipWords = ["what matters.", "AI software.", "automation.", "AI agents.", "mobile apps."];
+const shipWords = ["what matters.","AI software.","clarity.", "AI solutions.", "automation.", "scalable systems.", "digital products.", "AI agents.", "mobile apps."];
 
 export function Hero() {
   return (
@@ -21,7 +21,7 @@ export function Hero() {
         <h1 className="mb-12">
           <span className="animate-fade-up mb-8 flex items-center gap-3 font-mono text-sm font-normal text-muted-foreground">
             <span aria-hidden="true" className="h-px w-8 shrink-0 bg-foreground/30" />
-            Asauvia: AI software development company
+            Asauvia: From chaos to clarity
           </span>{" "}
           <span className="animate-fade-up block font-display text-[clamp(3rem,8.75vw,8rem)] leading-[0.9] tracking-tight text-foreground [animation-delay:100ms]">
             <span className="block">Build smarter systems.</span>{" "}
@@ -33,9 +33,9 @@ export function Hero() {
 
         <div className="grid items-end gap-12 lg:grid-cols-2 lg:gap-24">
           <p className="animate-fade-up max-w-xl text-xl leading-relaxed text-muted-foreground [animation-delay:200ms] lg:text-2xl">
-            Asauvia is an AI software development and product engineering company. We design, build
-            and modernize AI-powered software, digital products and automation for businesses across
-            international markets.
+            We help growing companies reduce operational chaos through AI-powered custom software,
+            workflow automation, and digital transformation. Scale faster, streamline operations,
+            and compete globally.
           </p>
 
           <div className="animate-fade-up flex flex-col items-start gap-4 [animation-delay:300ms] sm:flex-row">

@@ -18,7 +18,7 @@ import process from "@/data/process";
 
 const title = "Asauvia | AI Software Development & Engineering Company";
 const description =
-  "Asauvia is an AI software development company building AI apps, automation and custom software for startups and enterprises worldwide. Talk to an expert.";
+  "Transform operational complexity into streamlined systems. Asauvia helps growing companies scale through AI-powered software, workflow automation, and digital transformation. No more chaos—just clarity.";
 
 export const metadata: Metadata = pageMetadata({ path: "/", absoluteTitle: true, title, description });
 
