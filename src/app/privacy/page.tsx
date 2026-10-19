@@ -37,7 +37,7 @@ export default function PrivacyPage() {
       <section className="relative py-24 lg:py-32">
         <Container>
           <p className="mb-16 font-mono text-sm text-muted-foreground">
-            Last updated: <time dateTime="2026-10-06">6 October 2026</time>
+            Last updated: <time dateTime="2026-10-19">19 October 2026</time>
           </p>
           <Prose>
             <h2>Who we are and what this policy covers</h2>
@@ -82,9 +82,10 @@ export default function PrivacyPage() {
             </p>
             <h3>What we do not collect</h3>
             <p>
-              This website does not currently use analytics tools, advertising or tracking cookies, or
-              third-party marketing pixels. Our <Link href="/cookies">cookie policy</Link> has the
-              details.
+              This website, asauvia.com, does not use analytics tools, advertising or tracking cookies, or
+              third-party marketing pixels. Our Asauvia blog at blog.asauvia.com may use Google Analytics
+              and Google advertising cookies, but only after you agree to them in its cookie banner. Our{" "}
+              <Link href="/cookies">cookie policy</Link> has the details.
             </p>
 
             <h2>Why we use it</h2>
@@ -112,6 +113,10 @@ export default function PrivacyPage() {
                 about working together
               </li>
               <li>
+                <strong>your consent</strong>, for Google Analytics and advertising cookies on the Asauvia
+                blog, which you can withdraw at any time
+              </li>
+              <li>
                 <strong>our legitimate interests</strong> in answering business enquiries and in running
                 and securing this website, balanced against your rights
               </li>
@@ -127,6 +132,10 @@ export default function PrivacyPage() {
               <li>
                 a bot protection service (Cloudflare Turnstile), if it is enabled on the contact form,
                 which checks that a submission comes from a person
+              </li>
+              <li>
+                Google, on the Asauvia blog only, and only if you accept analytics or advertising cookies
+                there. Google handles this data under its own privacy policy.
               </li>
             </ul>
             <p>

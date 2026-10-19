@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* Same warm-paper tokens as the main Asauvia site (src/app/globals.css in the root app). Keep them in sync. */
+:root {
+  --background: oklch(0.985 0.002 90);
+  --foreground: oklch(0.14 0.01 60);
+  --muted: oklch(0.955 0.004 90);
+  --muted-foreground: oklch(0.45 0.015 60);
+  --border: oklch(0.89 0.006 90);
+  --signal: oklch(0.6 0.13 155);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-signal: var(--signal);
+
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-sans);
+  }
+
+  .font-wordmark {
+    font-family: var(--font-wordmark), Georgia, serif;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.7s ease-out both;
+  }
+
+  /* Transform-only so headline text is never delayed as an LCP candidate. */
+  @keyframes fade-up {
+    from {
+      transform: translateY(0.75rem);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  /* Subtle sitewide grain, as on the main site. */
+  .noise-overlay {
+    position: relative;
+  }
+
+  .noise-overlay::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.025;
+    pointer-events: none;
+    z-index: 100;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

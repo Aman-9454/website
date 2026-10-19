@@ -9,6 +9,6 @@ export default function OpengraphImage() {
   return renderOgImage({
     eyebrow: company.brandName,
     title: "Cookie policy",
-    subtitle: "No analytics or advertising cookies on asauvia.com.",
+    subtitle: "No analytics or advertising cookies on asauvia.com. The blog asks first.",
   });
 }
