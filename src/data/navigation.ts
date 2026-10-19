@@ -7,6 +7,8 @@ const primaryNav: NavItem[] = [
   { label: "Security", href: "/security" },
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
+  // The blog is a subdomain app (blog/ in this repo), so this is an absolute link.
+  { label: "Blog", href: "https://blog.asauvia.com" },
 ];
 
 const footerGroups: { title: string; items: NavItem[]; wide?: boolean }[] = [
@@ -33,6 +35,7 @@ const footerGroups: { title: string; items: NavItem[]; wide?: boolean }[] = [
     items: [
       { label: "FAQ", href: "/faq" },
       { label: "Talk to an expert", href: "/contact" },
+      { label: "Blog", href: "https://blog.asauvia.com" },
     ],
   },
   {

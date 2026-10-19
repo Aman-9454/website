@@ -11,7 +11,7 @@ import { pageMetadata } from "@/lib/seo";
 const path = "/cookies";
 const title = "Cookie policy";
 const description =
-  "asauvia.com sets no analytics or advertising cookies. See what browser storage the site may use, how consent would work, and how to control cookies.";
+  "asauvia.com sets no analytics or advertising cookies. The Asauvia blog asks before setting any. See what each site uses and how to control it.";
 const crumbs: Crumb[] = [
   { name: "Home", path: "/" },
   { name: "Cookie policy", path },
@@ -32,12 +32,12 @@ export default function CookiesPage() {
         crumbs={crumbs}
         label="Legal"
         title="Cookie policy"
-        description="This website does not use analytics or advertising cookies. Here is what that means in practice."
+        description="asauvia.com does not use analytics or advertising cookies. The Asauvia blog may use them, but only with your consent. Here is what that means in practice."
       />
       <section className="relative py-24 lg:py-32">
         <Container>
           <p className="mb-16 font-mono text-sm text-muted-foreground">
-            Last updated: <time dateTime="2026-10-06">6 October 2026</time>
+            Last updated: <time dateTime="2026-10-19">19 October 2026</time>
           </p>
           <Prose>
             <h2>What cookies are</h2>
@@ -64,11 +64,25 @@ export default function CookiesPage() {
               submission comes from a person. Strictly necessary storage does not require consent.
             </p>
 
+            <h2>Cookies on the Asauvia blog</h2>
+            <p>
+              The blog at blog.asauvia.com is a separate site with its own cookie banner. It may use Google
+              Analytics and Google advertising cookies. Until you choose, neither set of cookies is
+              set. If you accept analytics, Google Analytics sets cookies whose names start with{" "}
+              <code>_ga</code>, which count visits and show which articles are read. If you accept
+              advertising, Google may set advertising cookies, which can show ads based on your interests.
+            </p>
+            <p>
+              You can change your choice at any time from the Cookie settings link in the blog footer.
+              Rejecting removes the analytics cookies that the blog has set. Google handles the data it
+              collects through these cookies under its own privacy policy, as an independent data
+              controller.
+            </p>
+
             <h2>If this changes</h2>
             <p>
-              If we ever add analytics or any other non-essential cookies, we will ask for your consent
-              with a banner before setting them, and we will update this page first to list what they
-              are and why we use them.
+              Before we add any other non-essential cookies to asauvia.com, we will ask for your consent
+              with a banner and update this page first to list what they are and why we use them.
             </p>
 
             <h2>How to control cookies</h2>
