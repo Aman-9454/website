@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/schema";
 import services from "@/data/services";
+import { getAllProducts } from "@/lib/products";
 
 // The blog is a separate app on its own host. Its pages are listed here from the blog's own sitemap.
 // Override BLOG_SITEMAP_URL to point at a different copy (for example a local preview).
@@ -18,6 +19,7 @@ const STATIC_ROUTES: {
 }[] = [
   { path: "/", priority: 1, changeFrequency: "weekly" },
   { path: "/services", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/products", priority: 0.8, changeFrequency: "monthly" },
   { path: "/how-we-work", priority: 0.7, changeFrequency: "monthly" },
   { path: "/about", priority: 0.7, changeFrequency: "monthly" },
   { path: "/security", priority: 0.6, changeFrequency: "monthly" },
@@ -61,6 +63,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
     ...services.map((s) => ({
       url: `${SITE_URL}/services/${s.slug}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    ...getAllProducts().map((product) => ({
+      url: `${SITE_URL}/products/${product.slug}`,
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),

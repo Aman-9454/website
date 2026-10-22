@@ -4,7 +4,7 @@ const faqs: Faq[] = [
   {
     question: "What is Asauvia?",
     answer:
-      "Asauvia is a service-based software development and product engineering company headquartered in Uttar Pradesh, India. It builds AI applications, workflow automation, custom software, product engineering, web and mobile apps, cloud and DevOps, data integrations, HR and operations systems, and technical SEO for startups and enterprises worldwide. It does not sell products of its own, and works India Standard Time with clients across time zones.",
+      "Asauvia is a service-based software development and product engineering company headquartered in Uttar Pradesh, India. It builds AI applications, workflow automation, custom software, product engineering, web and mobile apps, cloud and DevOps, data integrations, HR and operations systems, and technical SEO for startups and enterprises worldwide. It also builds its own products, listed on the products page, and works India Standard Time with clients across time zones.",
   },
   {
     question: "What drives the cost of a project?",

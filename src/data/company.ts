@@ -15,6 +15,7 @@ const company: Company = {
   hqRegion: "Uttar Pradesh",
   hqCountry: "India",
   email: "info@asauvia.com",
+  salesEmail: "sales@asauvia.com",
   markets: [
     { name: "United States", justified: false },
     { name: "United Kingdom", justified: false },

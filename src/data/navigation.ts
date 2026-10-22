@@ -1,8 +1,10 @@
 import { navItemSchema, type NavItem } from "@/lib/validators";
 import { serviceCatalog } from "@/data/service-catalog";
+import { getAllProducts } from "@/lib/products";
 
 const primaryNav: NavItem[] = [
   { label: "Services", href: "/services" },
+  { label: "Products", href: "/products" },
   { label: "How we work", href: "/how-we-work" },
   { label: "Security", href: "/security" },
   { label: "About", href: "/about" },
@@ -19,6 +21,13 @@ const footerGroups: { title: string; items: NavItem[]; wide?: boolean }[] = [
     items: [
       ...serviceCatalog.map((s) => ({ label: s.name, href: `/services/${s.slug}` })),
       { label: "All services", href: "/services" },
+    ],
+  },
+  {
+    title: "Products",
+    items: [
+      ...getAllProducts().map((product) => ({ label: product.name, href: `/products/${product.slug}` })),
+      { label: "All products", href: "/products" },
     ],
   },
   {

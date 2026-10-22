@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { TrustStrip } from "@/components/sections/TrustStrip";
 import { ProblemSection } from "@/components/sections/ProblemSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
+import { ProductsSection } from "@/components/sections/ProductsSection";
 import { PrinciplesSection } from "@/components/sections/PrinciplesSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { MarketsSection } from "@/components/sections/MarketsSection";
@@ -43,6 +44,7 @@ export default function Home() {
       <ServicesSection
         services={services.map(({ slug, name, outcome, summary, deliverables }) => ({ slug, name, outcome, summary, deliverables }))}
       />
+      <ProductsSection />
       <PrinciplesSection principles={principles} />
       <ProcessSection steps={process} />
       <MarketsSection />
