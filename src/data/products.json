@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "softcloud-wash",
+    "name": "SoftCloud Wash",
+    "category": "Laundry booking portal",
+    "status": "Completed",
+    "summary": "An online portal where customers book clothes washing and pickup from a phone or laptop, choose their services, and follow each order until the clothes are back with them.",
+    "metaDescription": "SoftCloud Wash is an online portal for booking clothes washing and pickup. Schedule a meeting with Asauvia's sales team for pricing and details.",
+    "highlights": [
+      "Customers book a pickup and delivery slot online",
+      "Services and prices set out clearly for each type of garment",
+      "Order status updates from pickup to return",
+      "An admin view for staff to manage bookings and routes"
+    ],
+    "idealFor": "Laundry and dry-cleaning businesses that want to take bookings online"
+  },
+  {
+    "slug": "curato",
+    "name": "Curato",
+    "category": "Multi-vendor commerce platform",
+    "status": "Completed",
+    "summary": "A commerce platform for running a multi-vendor online store in India. Vendors, resellers, cash-on-delivery and online orders, courier shipping and payouts sit in one system.",
+    "metaDescription": "Curato is a multi-vendor commerce platform with cash on delivery, reseller links, Delhivery shipping and payouts. Book a meeting for pricing.",
+    "highlights": [
+      "Checkout with cash on delivery or online payment through PayU or Cashfree",
+      "Vendor onboarding, product listings, orders and payouts",
+      "Reseller storefronts with markup pricing and tracked referral links",
+      "Delhivery shipping, courier labels and parcel tracking",
+      "Operator controls for commissions, banners, settings and support tickets"
+    ],
+    "idealFor": "Operators running a store with several vendors or a reseller programme"
+  },
+  {
+    "slug": "custom-project",
+    "name": "Custom Project",
+    "category": "Built to order",
+    "status": "Custom build",
+    "summary": "Have a product in mind? We scope it with your team, design and build it, and support it after launch.",
+    "metaDescription": "Have a product idea? Asauvia scopes, designs and builds custom products for your team. Schedule a meeting for pricing and details.",
+    "highlights": [
+      "Scoped with your team before any build starts",
+      "Web, mobile or AI-powered, depending on the problem",
+      "Support after launch, agreed up front"
+    ],
+    "idealFor": "Teams with a product idea that off-the-shelf software does not cover"
+  }
+]

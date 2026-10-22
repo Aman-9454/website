@@ -5,6 +5,7 @@ import principles from "@/data/principles";
 import faqGroups from "@/data/faq-page";
 import homeFaqs from "@/data/faqs";
 import type { Faq } from "@/lib/validators";
+import { getAllProducts } from "@/lib/products";
 import { SITE_URL, ALTERNATE_NAMES } from "@/lib/schema";
 
 export const dynamic = "force-static";
@@ -34,13 +35,31 @@ export async function GET() {
     "",
     `- Name: ${company.brandName} (also written ${ALTERNATE_NAMES.join(", ")})`,
     `- Website: ${SITE_URL}`,
-    "- Type: service-based AI-driven software development and product engineering company. It builds software for startups and enterprises and does not sell products of its own.",
+    "- Type: service-based AI-driven software development and product engineering company. It builds software for startups and enterprises, and also builds its own products (see Products).",
     `- Headquarters: ${company.hqRegion}, ${company.hqCountry}`,
     "- Working hours: India Standard Time (IST), working with international clients across time zones",
     `- Email: ${company.email}`,
     `- Contact form: ${SITE_URL}/contact`,
     ...company.sameAs.map((url) => `- LinkedIn: ${url}`),
     "",
+    "## Products",
+    "",
+    ...getAllProducts().flatMap((p) => [
+      `### ${p.name}`,
+      "",
+      `URL: ${SITE_URL}/products/${p.slug}`,
+      "",
+      `Category: ${p.category}. Status: ${p.status}.`,
+      "",
+      p.summary,
+      "",
+      "What it does:",
+      "",
+      ...p.highlights.map((h) => `- ${h}`),
+      "",
+      `Ideal for: ${p.idealFor}. Pricing is shared on a meeting with the sales team at ${company.salesEmail}.`,
+      "",
+    ]),
     "## Services",
     "",
     ...services.map((s) => `- [${s.name}](${SITE_URL}/services/${s.slug}): ${s.outcome}`),

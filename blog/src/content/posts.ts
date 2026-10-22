@@ -4,6 +4,164 @@ import type { PostInput } from "@/lib/posts";
 // Figures in a post carry a source in the `sources` list, or are named as examples in their title.
 export const posts: PostInput[] = [
   {
+    slug: "curato-marketplace-cod-resellers",
+    title: "Running a Marketplace With COD and Resellers? How Curato Helps",
+    description:
+      "Curato puts vendors, resellers, cash-on-delivery orders, Delhivery shipping and payouts in one commerce platform. Here is the problem it solves and how it works.",
+    summary:
+      "Curato is a commerce platform for running a multi-vendor online store in India. It brings vendors, resellers, cash-on-delivery and online orders, courier shipping and payouts into one system, so the money and the parcels stay matched to the right order.",
+    date: "2026-10-22",
+    tag: "E-commerce software",
+    topic: "Products",
+    hashtags: ["#Curato", "#ECommerce", "#MultiVendor", "#CashOnDelivery", "#ResellerProgram", "#IndiaEcommerce"],
+    keyTakeaways: [
+      "Cash on delivery is a large share of Indian online orders, so settlement timing and failed deliveries become cash-flow problems, not just shipping problems.",
+      "Curato keeps vendors, resellers, orders, couriers and payouts in one system instead of separate tools and spreadsheets.",
+      "Resellers earn a fixed markup per product, released after delivery and the two-day return window.",
+      "Vendor payouts are requested from a wallet and approved by the operator, and commission is set per vendor.",
+      "Refunds and a customer return-request flow are not finished yet, so ask about them before you commit.",
+    ],
+    body: [
+      {
+        type: "p",
+        text: "Selling online gets harder once more than one person is involved. A store that carries its own products and also lists products from other vendors, or lets resellers share its catalogue for a markup, has to track who sold what, who gets paid, which courier picked up each parcel, and how much cash is still held for each order. Most teams do this with a mix of tools, spreadsheets and chat messages. Curato, built by Asauvia, is an attempt to keep those pieces in one system.",
+      },
+      { type: "h2", text: "What problem does Curato address?" },
+      {
+        type: "p",
+        text: "The problem is the gaps between tools. In India a large share of online orders are paid in cash on delivery, and that creates three separate headaches.",
+      },
+      {
+        type: "p",
+        text: "The first is settlement. Razorpay's blog puts the share of COD orders in India as high as 70%, and notes that money can take 2 to 14 days to be credited. A seller can ship an order on Monday and wait most of the week for the cash to arrive.",
+      },
+      {
+        type: "p",
+        text: "The second is failed delivery. CXOToday reported in March 2025 that roughly 25% to 30% of COD orders end in return-to-origin, and that about 20% of packages fail on the first delivery attempt. The article does not name the studies behind the COD figure, so treat it as a planning range rather than a precise rate.",
+      },
+      {
+        type: "p",
+        text: "The third is returns. EasyEcom's annual review of sellers on its platform reported return rates falling from 24.8% in Q4 2024 to 16.2% in Q4 2025, with fashion and apparel the highest category at 26%. Those numbers cover one platform's sellers, not the whole market, but they show how much margin can sit in returns.",
+      },
+      { type: "h2", text: "How does Curato handle cash-on-delivery orders?" },
+      {
+        type: "p",
+        text: "Checkout lets the customer choose cash on delivery or pay online, through PayU or Cashfree. Customers can enter a GST number to receive a tax invoice, and they can download a PDF invoice for each order.",
+      },
+      {
+        type: "p",
+        text: "When an order goes out for delivery, Curato generates a six-digit code, valid for 24 hours, and sends it to the customer on WhatsApp. The delivery is confirmed when the code is entered, and the vendor's earning is credited at that point. Orders that a vendor has not confirmed within two days are escalated to the operator automatically.",
+      },
+      {
+        type: "figure",
+        figure: {
+          kind: "steps",
+          title: "Example: how one COD order moves through Curato",
+          caption: "Each step has an owner, so a delay shows up against a named party rather than as a mystery in a spreadsheet.",
+          note: "Source: the order, shipping and delivery flow as built in the Curato codebase. This shows the steps, not measured turnaround times.",
+          steps: [
+            "The customer places the order and chooses cash on delivery or online payment.",
+            "The vendor accepts the order and submits parcel details, with a photo.",
+            "Delhivery schedules the pickup and the vendor prints the courier label.",
+            "The courier delivers, and the customer confirms with the WhatsApp code.",
+            "The vendor's earning is credited, and any reseller markup is released after the return window.",
+          ],
+        },
+      },
+      { type: "h2", text: "How do vendors get paid?" },
+      {
+        type: "p",
+        text: "A vendor registers with business, bank, GST and licence details, verifies a WhatsApp code, and waits for the operator to approve the account. After that the vendor lists products with images, variations and stock. Low-stock alerts arrive by email, and an AI assistant can draft a product description, specs and search tags from a product name.",
+      },
+      {
+        type: "p",
+        text: "For each order, the vendor accepts it, submits parcel details (up to 25 kg, with a photo), uploads a dispatch photo and invoice, and gets a Delhivery label. Earnings land in a wallet. The vendor can add a UPI or bank account, request a payout, and wait for the operator to approve it or mark it paid. The operator sets each vendor's commission, can change it for all vendors at once, and reviews a ledger for each vendor.",
+      },
+      { type: "h2", text: "How do resellers sell without holding stock?" },
+      {
+        type: "p",
+        text: "A reseller applies, and the operator approves or blocks the application. An approved reseller picks products from the catalogue and sets a fixed markup on each one. The customer's price is the platform price plus that markup, and the reseller's commission is the markup multiplied by the quantity ordered.",
+      },
+      {
+        type: "p",
+        text: "Resellers group products into collections with a share code, and each collection opens as a storefront at its own link. Referral links carry a ref code, so clicks are logged and orders placed through a link are credited to the reseller who shared it.",
+      },
+      {
+        type: "p",
+        text: "The markup is released to the reseller's wallet after the order is delivered and the two-day return window has passed. Withdrawals start at ₹500, are capped at ₹50,000 a day, and need operator approval.",
+      },
+      { type: "h2", text: "What does the operator control?" },
+      {
+        type: "ul",
+        items: [
+          "Approval and blocking for vendors and resellers.",
+          "Commission rates for each vendor, or for all vendors at once.",
+          "Vendor payouts: approve, reject or mark as paid.",
+          "Homepage banners, categories and subcategories.",
+          "Store settings, policy pages for terms, privacy and returns, and the About Us page.",
+          "Newsletter subscribers and bulk email to customers.",
+          "Support tickets from customers and vendors, plus FAQs and downloadable resources.",
+          "Sub-admin accounts, with permissions for users, vendors, products, orders and settings.",
+        ],
+      },
+      { type: "h2", text: "What is not finished yet?" },
+      {
+        type: "p",
+        text: "Curato is not yet ready for full production use, and the codebase lists its open gaps. Refunds are not available: the refund function returns 'not implemented'. A customer-facing cancellation or return-request flow was not found, so returns are covered by store policy text for now. Ask about both before you commit to the platform.",
+      },
+      {
+        type: "quote",
+        text: "Starting a marketplace with cash on delivery, resellers and payouts is not the hard part. Keeping the money right is, because every order touches a customer, a vendor, a courier and often a reseller.",
+      },
+      { type: "h2", text: "Who is Curato for?" },
+      {
+        type: "p",
+        text: "Curato suits a business that runs or plans a multi-seller store in India: an operator who wants several vendors on one storefront, a brand that wants a reseller programme with tracked links and markups, or a team that wants cash-on-delivery orders, courier labels and payouts without stitching several tools together. A single-seller shop that only needs a simple cart will find the vendor, reseller and payout layers add setup it does not need.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Does Curato support cash on delivery?",
+        answer:
+          "Yes. At checkout, customers choose cash on delivery or pay online through PayU or Cashfree. Cash-on-delivery orders are confirmed when the customer enters a six-digit code sent to them on WhatsApp when the order goes out.",
+      },
+      {
+        question: "How do resellers get paid through Curato?",
+        answer:
+          "Each reseller earns a fixed markup on each product sold through their links. The markup is released to their wallet after the order is delivered and the two-day return window has passed. Withdrawals start at ₹500 and need operator approval.",
+      },
+      {
+        question: "Does Curato handle refunds?",
+        answer:
+          "Not yet. The refund function is not implemented, so any refund currently has to be handled outside the platform.",
+      },
+      {
+        question: "Which courier does Curato use?",
+        answer:
+          "Delhivery. Curato creates shipments, schedules pickups, prints courier labels and tracks parcels by airway bill number through Delhivery.",
+      },
+      {
+        question: "Who approves vendors and resellers on Curato?",
+        answer:
+          "The platform operator. Vendors verify a WhatsApp code and then wait for approval, and resellers are approved or blocked by the operator.",
+      },
+    ],
+    sources: [
+      {
+        label: "Razorpay blog: cash on delivery and settlement in India (February 2024)",
+        url: "https://razorpay.com/blog/?p=14772",
+      },
+      {
+        label: "CXOToday: ClickPost COD and failed-delivery figures (March 2025)",
+        url: "https://cxotoday.com/media-coverage/clickpost-unveils-parth-ai-powered-voice-agent-transforming-failed-delivery-management-with-intelligent-automation/",
+      },
+      {
+        label: "EasyEcom: The Commerce Index 2025 Annual Review",
+        url: "https://www.easyecom.io/resources/reports/2025-ecommerce-collective",
+      },
+    ],
+  },
+  {
     slug: "unbilled-microsoft-365-licenses-msp",
     title: "Microsoft 365 Seats Not Billed? How MSPs Stop Seat Drift",
     description:

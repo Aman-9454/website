@@ -66,7 +66,7 @@ const faqs: Faq[] = [
   {
     question: "Is Asauvia a product company or a service company?",
     answer:
-      "Asauvia is a service-based company. We do not sell products; we design and build software for startups and enterprises, from AI software and workflow automation to custom software, web and mobile apps, cloud, data, HR and operations systems, and SEO work.",
+      "Services come first. Asauvia is a service-based company: we design and build software for startups and enterprises, from AI software and workflow automation to custom software, web and mobile apps, cloud, data, HR and operations systems, and SEO work. We also build our own products, which are listed on the products page, and we can build a custom product for your team.",
   },
   {
     question: "How do we start working together?",

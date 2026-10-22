@@ -15,6 +15,8 @@ export const companySchema = z.object({
   hqRegion: z.string(),
   hqCountry: z.string(),
   email: z.string().email(),
+  // Where product meeting requests and pricing enquiries go.
+  salesEmail: z.string().email(),
   markets: z.array(marketSchema),
   sameAs: z.array(z.string().url()),
 });
